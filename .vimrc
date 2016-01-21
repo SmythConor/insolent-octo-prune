@@ -1,3 +1,4 @@
+syntax enable
 colorscheme peachpuff
 inoremap {{ {<CR>}<esc>ko<Tab>
 inoremap }} {}<left>
