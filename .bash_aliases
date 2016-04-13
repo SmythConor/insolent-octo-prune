@@ -32,10 +32,6 @@ alias xclip="xclip -selection c"
 alias sts="/usr/share/sts-bundle/sts-3.7.0.RELEASE/STS"
 alias android="/usr/share/android-studio/bin/studio.sh"
 
-alias run=". ../bash/run.sh"
-alias make=". ../bash/make.sh"
-alias clean=". ../bash/clean.sh"
-
 alias sublime="~/sw/sublime_text/sublime_text"
 
 color_prompt=yes
