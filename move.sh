@@ -6,7 +6,7 @@ then
 
 	if [ "$choice" == "$yes" ];
 	then
-		echo -e "Overwriting ~/.bashrc"
+		echo -e "Overwriting ~/.bash_aliases"
 		cp .bash_aliases ~
 	fi
 fi
