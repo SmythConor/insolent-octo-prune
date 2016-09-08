@@ -9,6 +9,8 @@ then
 		echo -e "Overwriting ~/.bash_aliases"
 		cp .bash_aliases ~
 	fi
+else
+	cp .bash_aliases ~
 fi
 
 if [ -f ~/.vimrc ];
@@ -20,4 +22,6 @@ then
 		echo -e "Overwriting ~/.vimrc"
 		cp .vimrc ~ 
 	fi
+else
+		cp .vimrc ~ 
 fi
