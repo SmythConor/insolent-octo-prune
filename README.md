@@ -1,5 +1,4 @@
 # insolent-octo-prune
-Some files for cross Linux use
-``` .vimrc ``` ```.bash_aliases ```
+Some files for cross PC use
 
 /usr/share/vim/vim74/colors/
