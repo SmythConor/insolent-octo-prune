@@ -33,3 +33,5 @@ alias jks="ssh buildmaster@jenkins"
 alias xclip="xclip -selection c"
 alias sts="/usr/share/sts-bundle/sts-3.7.0.RELEASE/STS"
 alias android="/usr/share/android-studio/bin/studio.sh"
+
+alias lsd='docker ps -a --format="table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" | sed ''/Exited/s//`printf "\033[0;31mExited\033[0m"`/'' | sed ''/Up/s//`printf "\e[96mUp\033[0m"`/'''
