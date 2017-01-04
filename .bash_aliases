@@ -19,6 +19,7 @@ alias log="git log"
 alias branch="git branch"
 alias checkout="git checkout"
 alias diff="git diff"
+alias show="git show"
 
 color_prompt=yes
 PS1='${debian_chroot:+($debian_chroot)}\[\033[0;35m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
