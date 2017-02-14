@@ -32,7 +32,7 @@ alias dlog="docker logs"
 alias dlogf="docker logs -f"
 alias dlogt="docker logs --tail"
 alias dlogft="docker logs -f --tail"
-alias img='docker images'
+alias dimg='docker images'
 alias lsd='docker ps -a --format="table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" | sed ''/Exited/s//`printf "\033[0;31mExited\033[0m"`/'' | sed ''/Up/s//`printf "\e[96mUp\033[0m"`/'''
 
 #Bash Vars
