@@ -4,6 +4,7 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 set nu 
+set relativenumber
 hi LineNr ctermfg=DarkRed
 hi Comment ctermfg=yellow
 hi Type ctermfg=blue
@@ -11,6 +12,7 @@ set numberwidth=1
 set hls
 imap <C-d> <C-[>diwi
 inoremap <C-bs> <esc>diwi
+inoremap jj <esc>
 highlight OverLength ctermfg=Grey guibg=#592929
 "match OverLength /\%81v.\+/
 
