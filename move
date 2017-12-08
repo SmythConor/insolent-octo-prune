@@ -1,3 +1,5 @@
+#!/bin/bash
+
 yes=y
 
 if [ -f ~/.bash_aliases ];
