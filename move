@@ -4,12 +4,19 @@ yes=y
 
 if [ -f ~/.bash_aliases ];
 then
-	read -p "Overwrite ~/.bash_aliases?[y/n]: " choice
-
-	if [ "$choice" == "$yes" ];
+	if [ -f ~/.custom_bash_aliases ];
 	then
-		echo -e "Overwriting ~/.bash_aliases"
-		cp .bash_aliases ~
+		read -p "Overwrite ~/.custom_bash_aliases?[y/n]: " choice
+
+		if [ "$choice" == "$yes" ];
+		then
+			echo -e "Overwriting ~/.custom_bash_aliases"
+			cp .bash_aliases ~/.custom_bash_aliases
+			echo -e "Remember to source ~/.custom_bash_aliases in your ~/.bashrc"
+		fi
+	else
+		cp .bash_aliases ~/.custom_bash_aliases
+		echo -e "Remember to source ~/.custom_bash_aliases in your ~/.bashrc"
 	fi
 else
 	cp .bash_aliases ~

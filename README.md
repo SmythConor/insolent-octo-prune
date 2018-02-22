@@ -1,4 +1,3 @@
 # insolent-octo-prune
-Some files for cross PC use
 
-/usr/share/vim/vim74/colors/
+Run the move script to copy over the changes
