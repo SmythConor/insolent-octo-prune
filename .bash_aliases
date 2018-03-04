@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Misc aliases
 alias la="ls -AG"
 alias l="ls -CFG"
