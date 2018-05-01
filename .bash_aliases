@@ -52,12 +52,19 @@ function cbc {
 
 # lists all the modified files
 function gmodified {
-	git status -suno | awk '{ FS=" M "; output=""; for(i=2;i<=NF;i++){output=output$i" "}; print output; }'
+	#git status -suno | awk '{ FS=" M "; output=""; for(i=2;i<=NF;i++){output=output$i" "}; print output; }'
+	git ls-files -m
 }
 
 # lists all the deleted files
 function gdeleted {
-	git status -suno | awk '{ FS=" D "; output=""; for(i=2;i<=NF;i++){output=output$i" "}; print output; }'
+	#git status -suno | awk '{ FS=" D "; output=""; for(i=2;i<=NF;i++){output=output$i" "}; print output; }'
+	git ls-files -d
+}
+
+#lists all the untracked files
+function gothers {
+	git ls-files -o
 }
 
 # adds all the modified files
@@ -70,12 +77,22 @@ function gaddd {
 	gdeleted | xargs git add
 }
 
+function gaddo {
+	gothers | xargs git add
+}
+
 # adds all the modified/deleted files
-function gadda {
+function gaddmd {
 	gaddm
 	gaddd
 }
 
+# adds all the files
+function gadda {
+	gaddm
+	gaddd
+	gaddo
+}
 
 # Set the upsteam to master for whatever branch
 function gsetup {
